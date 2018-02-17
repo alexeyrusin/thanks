@@ -1,3 +1,4 @@
+from flask import Flask, render_template, make_response
 app = Flask(__name__)
 
 @app.route('/')
@@ -23,3 +24,7 @@ def robots():
         return response
     except Exception as e:
         return(str(e))
+
+if __name__ == '__main__':
+    app.config['TEMPLATES_AUTO_RELOAD']=True
+    app.run(debug=True,use_reloader=True)
