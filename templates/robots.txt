@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: http://thanks.pythonanywhere.com/sitemap.xml
+Host: www.thanks.pythonanywhere.com
