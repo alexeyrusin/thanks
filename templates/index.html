@@ -10,21 +10,118 @@
     <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
     <link rel="icon" href="static/favicon.ico" type="image/x-icon">
     <style>
-    #content,#logo img,nav{margin:0 auto}#oo_name,#oo_name textarea{width:100%;height:40px}#name,body,h1,h2,h3,html,logo img{padding:0;margin:0}#name,#name textarea{height:100px;text-align:center}#logo,#logo img{display:block;height:200px}#for_what textarea,#name textarea,#user_name textarea,#work textarea{font-family:Georgia,'Times New Roman',Times,serif}#user_name,#work{padding-bottom:20px}#fio,#fio textarea,#seo,#seo textarea{width:47%}#map,#map textarea,#order,#order textarea{width:100%;height:30px}#fio textarea,#map textarea,#name,#name textarea,#oo_name textarea,#seo textarea,h1,h2,h3,textarea{text-align:center}#content,nav{width:800px}#content{background-image:url(back.png);display:block;background-color:#eee;height:1150px;border:1px solid #fff;padding:0}article{height:950px;width:600px;margin:100px auto}textarea{background-color:transparent;resize:none;border:4px solid red}#name,nav{padding:20px 0}#name{font-size:300%}#name textarea{font-size:40px;width:100%}#logo{width:100%}#user_name{height:90px;width:100%}#user_name textarea{font-size:36px;width:100%;height:90px}#work{height:130px;width:100%}#for_what textarea,#work textarea{font-size:20px;width:100%;height:130px;text-align:center}#fio textarea,#map textarea,#oo_name textarea,#order textarea,#seo textarea{font-family:Georgia,'Times New Roman',Times,serif;font-size:14px}#for_what{padding-bottom:50px;height:130px;width:100%}#fio,#seo{margin-bottom:10px;display:inline}#order{margin-top:10px}#order textarea{text-align:left}#map{margin-top:20px}nav{background-color:#ff0}
-    </style>
+#content, #logo img, nav {
+    margin: 0 auto;
+}
+#f0, textarea {
+    width: 100%;
+    height: 40px;
+}
+body, h1, h2, h3, html, logo img {
+    padding: 0;
+    margin: 0;
+}
+#f1, #f1 textarea {
+    height: 100px;
+    text-align: center;
+}
+#logo, #logo img {
+    display: block;
+    height: 200px;
+}
+#f4 textarea, #f1 textarea, #f2 textarea, #f3 textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#f2, #f3 {
+    padding-bottom: 20px;
+}
+#f6, #f6 textarea, #f5, #f5 textarea {
+    width: 47%}
+#f8, #f8 textarea, #f7, #f7 textarea {
+    width: 100%;
+    height: 30px;
+}
+#f6 textarea, #f8 textarea, #f1, #f1 textarea, #f0 textarea, #f5 textarea, h1, h2, h3, textarea {
+    text-align: center;
+}
+#content, nav {
+    width: 800px;
+}
+#content {
+    background-image: url(back.png);
+    display: block;
+    background-color: #eee;
+    height: 1150px;
+    border: 1px solid #fff;
+    padding: 0;
+}
+article {
+    height: 950px;
+    width: 600px;
+    margin: 100px auto;
+}
+textarea {
+    background-color: transparent;
+    resize: none;
+    border: 4px solid red;
+}
+#f1, nav {
+    padding: 20px 0;
+}
+#f1 {
+    font-size: 300%}
+#f1 textarea {
+    font-size: 40px;
+    width: 100%}
+#logo {
+    width: 100%}
+#f2 {
+    height: 90px;
+    width: 100%}
+#f2 textarea {
+    font-size: 36px;
+    width: 100%;
+    height: 90px;
+}
+#f3 {
+    height: 130px;
+    width: 100%}
+#f4 textarea, #f3 textarea {
+    font-size: 20px;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+#f6 textarea, #f8 textarea, #f0 textarea, #f7 textarea, #f5 textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#f4 {
+    padding-bottom: 50px;
+    height: 130px;
+    width: 100%}
+#f6, #f5 {
+    margin-bottom: 10px;
+    display: inline;
+}
+#f7 {
+    margin-top: 10px;
+}
+#f7 textarea {
+    text-align: left;
+}
+#f8 {
+    margin-top: 20px;
+}
+nav {
+    background-color: green;
+}
+   </style>
 </head>
 
 <body>
     <nav>
         <h1>Конструктор грамот, дипломов, благодарностей</h1>
-        <button id="printBtn" title='Распечатать'>Распечатать</button>
-        <button id="fonBtn" title='Поменять макет'>Поменять макет</button>
-        <button id="fonColorBtn" title='Поменять цвет макета'>Поменять цвет макета</button>
-        <button id="logo2" name='logo2' title='Поменять герб'>Поменять герб</button>
-        <button id="logo_del" title='Удалить герб'>Удалить герб</button>
-        <button id="fonBgBtn" title='Добавить фон'>Добавить фон</button>
-        <a href='/static/inst2.pdf'>Инструкция</a>
-        <button id="inst" title='Поддержка'>Поддержка</button>
     </nav>
 
     <div id="content">
@@ -32,6 +129,7 @@
             <div id='logo'></div>
         </article>
     </div>
+	<div id='instruction'></div>
 </body>
     <script>
 /*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */

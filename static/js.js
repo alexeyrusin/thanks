@@ -14,24 +14,52 @@ $(document).ready(function() {
         }
     });
 
-	var divs = {'oo_name': ['Название учреждения', 2, 2],
-	'name': ['Название документа', 2, 2],
-	'user_name': ['ФИО', 40, 2],
-	'work': ['Рабочему по стирке и ремонту белья муниципального бюджетного учреждения “Колокольчик” села Лесновка Сакского района Республики Крым', 40, 6],
-	'for_what': ['За высокий профессионализм, добросовестный труди в связи с 50-летним юбилеем МБДОУ “Колокольчик” с. Лесновка Сакского района Республики Крым', 40, 6],
-	'seo': ['Должность', 40, 1],
-	'fio': ['ФИО', 40, 1],
-	'order': ['Приказ', 40, 1],
-	'map': ['г. Саки', 40, 1],
+	
+//buttons
+	var buttons = 
+	{
+		'printBtn':['Распечатать'],
+		'b2':['Поменять макет'],
+		'b3':['Поменять цвет макета'],
+		'b4':['Поменять герб'],
+		'b5':['Удалить герб'],
+		'b6':['Добавить фон'],
+		'b7':['Поддержка'],
 	};
-
-	function create_divs(x, y) {
-		$('article').append('<div id="'+x+'"><textarea style="overflow:hidden" name="comment" cols="'+y[1]+'" rows="'+y[2]+'" placeholder="'+y[0]+'"></textarea></div>');
+	
+	function create_buttons(x, y) {
+		$('nav').append('<button id="'+x+'">'+y[0]+'</button>');
 	}
 
-	$.each( divs, function( key, value ) {
-		create_divs(key, value);
+	$.each( buttons, function( key, value ) {
+		create_buttons(key, value);
 	});
+//buttons
+
+	
+//fields      
+	var fields = 
+	{
+		'f0': ['Название учреждения', 2, 2],
+		'f1': ['Название документа', 2, 2],
+		'f2': ['ФИО', 40, 2],
+		'f3': ['Рабочему по стирке и ремонту белья муниципального бюджетного учреждения “Колокольчик” села Лесновка Сакского района Республики Крым', 40, 6],
+		'f4': ['За высокий профессионализм, добросовестный труди в связи с 50-летним юбилеем МБДОУ “Колокольчик” с. Лесновка Сакского района Республики Крым', 40, 6],
+		'f5': ['Должность', 40, 1],
+		'f6': ['ФИО', 40, 1],
+		'f7': ['Приказ', 40, 1],
+		'f8': ['г. Саки', 40, 1],
+	};
+
+	function create_fields(x, y) {
+		$('article').append('<div id="'+x+'"><textarea style="overflow:hidden" cols="'+y[1]+'" rows="'+y[2]+'" placeholder="'+y[0]+'"></textarea></div>');
+	}
+
+	$.each( fields, function( key, value ) {
+		create_fields(key, value);
+	});
+//fields  
+
 
     $(document).on('click', '#logo2', function() {
         $('#logo').html('<img src="static/logo/' + logo + '.svg' + '">')
